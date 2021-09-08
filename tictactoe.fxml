@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.panda.org.Controller">
+   <children>
+      <StackPane prefHeight="511.0" prefWidth="600.0">
+         <children>
+            <Pane fx:id="gamePane" prefHeight="511.0" prefWidth="0.0" styleClass="background" stylesheets="@panda.css">
+               <children>
+                  <Button fx:id="btn5" layoutX="240.0" layoutY="203.0" mnemonicParsing="false" onMouseClicked="#initialize" prefHeight="104.0" prefWidth="120.0" styleClass="button1" stylesheets="@panda.css" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font></Button>
+                  <Button fx:id="btn4" layoutX="113.0" layoutY="203.0" mnemonicParsing="false" onMouseClicked="#initialize" prefHeight="104.0" prefWidth="120.0" styleClass="button1" stylesheets="@panda.css" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font></Button>
+                  <Button fx:id="btn6" layoutX="367.0" layoutY="203.0" mnemonicParsing="false" onMouseClicked="#initialize" prefHeight="104.0" prefWidth="120.0" styleClass="button1" stylesheets="@panda.css" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font></Button>
+                  <Button fx:id="btn8" layoutX="240.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#initialize" prefHeight="104.0" prefWidth="120.0" styleClass="button1" stylesheets="@panda.css" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font></Button>
+                  <Button fx:id="btn7" layoutX="113.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#initialize" prefHeight="104.0" prefWidth="120.0" styleClass="button1" stylesheets="@panda.css" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font></Button>
+                  <Button fx:id="btn9" layoutX="367.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#initialize" prefHeight="104.0" prefWidth="120.0" styleClass="button1" stylesheets="@panda.css" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font></Button>
+                  <Button fx:id="btn2" layoutX="240.0" layoutY="89.0" mnemonicParsing="false" onMouseClicked="#initialize" prefHeight="104.0" prefWidth="120.0" styleClass="button1" stylesheets="@panda.css" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font></Button>
+                  <Button fx:id="btn1" layoutX="113.0" layoutY="89.0" mnemonicParsing="false" onMouseClicked="#initialize" prefHeight="104.0" prefWidth="120.0" styleClass="button1" stylesheets="@panda.css" textFill="#f8f8f8">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font></Button>
+                  <Button fx:id="btn3" layoutX="367.0" layoutY="89.0" mnemonicParsing="false" onMouseClicked="#initialize" prefHeight="104.0" prefWidth="120.0" styleClass="button1" stylesheets="@panda.css" textFill="#fcfcfc">
+                     <font>
+                        <Font name="System Bold" size="49.0" />
+                     </font></Button>
+                  <Label layoutX="214.0" layoutY="24.0" prefHeight="50.0" prefWidth="172.0" text="Tic Tac Toe" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="winnerPane" prefHeight="200.0" prefWidth="200.0" styleClass="background" stylesheets="@panda.css">
+               <children>
+                  <Text fx:id="winnerText" fill="WHITE" layoutX="189.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X Wins!">
+                     <font>
+                        <Font size="67.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="129.0" layoutY="340.0" mnemonicParsing="false" onAction="#yesButtonClicked" prefHeight="50.0" prefWidth="120.0" styleClass="menuButtons" text="Yes">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Text fill="WHITE" layoutX="228.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Would you like to play again?">
+                     <font>
+                        <Font name="System Italic" size="11.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="351.0" layoutY="340.0" mnemonicParsing="false" onAction="#exitButtonClicked" prefHeight="50.0" prefWidth="120.0" styleClass="menuButtons" text="No">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="mainMenuPane" prefHeight="200.0" prefWidth="200.0" styleClass="background" stylesheets="@panda.css">
+               <children>
+                  <Text fill="WHITE" layoutX="164.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TicTacToe" textAlignment="CENTER" wrappingWidth="272.13671875">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="171.0" layoutY="328.0" mnemonicParsing="false" onAction="#exitButtonClicked" prefHeight="50.0" prefWidth="258.0" styleClass="menuButtons" text="Exit" />
+                  <Button layoutX="171.0" layoutY="268.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="258.0" styleClass="menuButtons" text="Player vs AI" />
+                  <Button layoutX="171.0" layoutY="206.0" mnemonicParsing="false" onAction="#pvpButtonClicked" prefHeight="50.0" prefWidth="258.0" styleClass="menuButtons" text="Player vs Player" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
